@@ -194,6 +194,94 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2054394978
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1165992998545724, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_Name
+      value: Espiritu_de_fuego
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.111328125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120836533278726, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114419153531601642, guid: 7b29d96794f52b046bca4c62e5b37469,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b29d96794f52b046bca4c62e5b37469, type: 3}
+--- !u!1 &2054394979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1165992998545724, guid: 7b29d96794f52b046bca4c62e5b37469,
+    type: 3}
+  m_PrefabInstance: {fileID: 2054394978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2054394980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054394979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658b5aff74afa82409dfecc3aef1fff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visionRadius: 4
+  attackRadius: 3
+  speed: 1.75
+  FireBallPrefab: {fileID: 1603110710105814, guid: 31622109f9160fd45a4d5507bddc31e3,
+    type: 3}
+  attackSpeed: 2
+  maxHp: 3
+  hp: 0
 --- !u!1001 &4833575439492321880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -205,6 +293,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Playerr
+      objectReference: {fileID: 0}
+    - target: {fileID: 4833575438533607343, guid: c33ec55916418a840911e399746ae3ba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4833575438533607330, guid: c33ec55916418a840911e399746ae3ba,
         type: 3}
@@ -244,7 +337,7 @@ PrefabInstance:
     - target: {fileID: 4833575438533607330, guid: c33ec55916418a840911e399746ae3ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4833575438533607330, guid: c33ec55916418a840911e399746ae3ba,
         type: 3}
