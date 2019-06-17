@@ -11,7 +11,7 @@ public class espiritu_de_fuego_ia : MonoBehaviour
 
     // Variables relacionadas con el ataque
     [Tooltip("Prefab de la bola de fuego que se disparará")]
-    public GameObject FireBallPrefab;
+    public GameObject rockPrefab;
     [Tooltip("Velocidad de ataque (segundos entre ataques)")]
     public float attackSpeed = 2f;
     bool attacking;
@@ -24,6 +24,8 @@ public class espiritu_de_fuego_ia : MonoBehaviour
 
     // Variable para guardar al jugador
     GameObject player;
+    // Variable para guardar al cristal
+    GameObject cristal;
 
     // Variable para guardar la posición inicial
     Vector3 initialPosition, target;
@@ -38,7 +40,11 @@ public class espiritu_de_fuego_ia : MonoBehaviour
         // Recuperamos al jugador gracias al Tag
         player = GameObject.FindGameObjectWithTag("Player");
 
+        // Recuperamos al cristal gracias al Tag
+        cristal = GameObject.FindGameObjectWithTag("Cristal");
+
         // Guardamos nuestra posición inicial
+        //initialPosition = cristal.transform.position;
         initialPosition = transform.position;
 
         anim = GetComponent<Animator>();
@@ -51,8 +57,9 @@ public class espiritu_de_fuego_ia : MonoBehaviour
     void Update()
     {
 
-        // Por defecto nuestro target siempre será nuestra posición inicial
-        target = initialPosition;
+        // Por defecto nuestro target siempre será el cristal del jugador
+        target = cristal.transform.position;
+        //target = initialPosition;
 
         // Comprobamos un Raycast del enemigo hasta el jugador
         RaycastHit2D hit = Physics2D.Raycast(
@@ -131,9 +138,11 @@ public class espiritu_de_fuego_ia : MonoBehaviour
     {
         attacking = true;  // Activamos la bandera
         // Si tenemos objetivo y el prefab es correcto creamos la roca
-        if (target != initialPosition && FireBallPrefab != null)
+        if (target != initialPosition && rockPrefab != null)
         {
-            Instantiate(FireBallPrefab, transform.position, transform.rotation);
+            GameObject aux = Instantiate(rockPrefab, transform.position, transform.rotation);
+            aux.GetComponent<Rock>().target = target;
+            aux.GetComponent<Rock>().calculateDir();
             // Esperamos los segundos de turno antes de hacer otro ataque
             yield return new WaitForSeconds(seconds);
         }
@@ -156,7 +165,7 @@ public class espiritu_de_fuego_ia : MonoBehaviour
         GUI.Box(
             new Rect(
                 pos.x - 20,                   // posición x de la barra
-                Screen.height - pos.y + 60,   // posición y de la barra
+                Screen.height - pos.y + 40,   // posición y de la barra
                 40,                           // anchura de la barra    
                 24                            // altura de la barra  
             ), hp + "/" + maxHp               // texto de la barra
