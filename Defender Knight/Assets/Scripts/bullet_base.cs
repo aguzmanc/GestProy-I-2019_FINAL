@@ -24,6 +24,11 @@ public class bullet_base : MonoBehaviour
             col.GetComponent<Enemy>().Attacked();
             Destroy(gameObject);
         }
+        if (col.transform.tag == "FireEnemy")
+        {
+            col.GetComponent<espiritu_de_fuego_ia>().Attacked();
+            Destroy(gameObject);
+        }
     }
     void OnBecameInvisible()
     {

@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 95978110417515160}
   - component: {fileID: 2883057696967119615}
   - component: {fileID: 50573978581630612}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: fire_enemy
-  m_TagString: Enemy
+  m_TagString: FireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +157,8 @@ MonoBehaviour:
   visionRadius: 7
   attackRadius: 5
   speed: 1.75
-  rockPrefab: {fileID: 1603110710105814, guid: 31622109f9160fd45a4d5507bddc31e3, type: 3}
+  rockPrefab: {fileID: 7016212215448487967, guid: 2ecacbc6984eeba4eb4f107116328d66,
+    type: 3}
   attackSpeed: 2
   maxHp: 3
   hp: 0
