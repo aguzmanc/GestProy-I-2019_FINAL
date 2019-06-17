@@ -18,4 +18,8 @@ public class ButtonUIManager : MonoBehaviour
     {
         Application.Quit();
     }
+    public void btnCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
