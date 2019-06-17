@@ -15,4 +15,19 @@ public class bullet_base : MonoBehaviour
     {
         transform.Translate(Vector3.up * Time.deltaTime * 7);
     }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        // Si chocamos contra el enemigo lo borramos
+        if (col.transform.tag == "Enemy")
+        {
+            col.GetComponent<Enemy>().Attacked();
+            Destroy(gameObject);
+        }
+    }
+    void OnBecameInvisible()
+    {
+        // Si se sale de la pantalla borramos la roca
+        Destroy(gameObject);
+    }
 }
