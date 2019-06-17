@@ -7,9 +7,11 @@ public class ButtonUIManager : MonoBehaviour
 {
     [SerializeField]
     private string escena;
+    public GameObject music;
     // Start is called before the first frame update
     public void btnStart()
     {
+        Destroy(GameObject.Find(music.name));
         SceneManager.LoadScene(escena);
     }
     public void btnExit()

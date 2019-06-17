@@ -234,7 +234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362088295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.14, y: 0, z: 0}
+  m_LocalPosition: {x: -8.5, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -939,6 +939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScrollBarArmor
       objectReference: {fileID: 0}
+    - target: {fileID: 3794934734291453161, guid: 48e89bd3cf49dd143bf21474bbfedd36,
+        type: 3}
+      propertyPath: m_Size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3794934734291453160, guid: 48e89bd3cf49dd143bf21474bbfedd36,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1043,11 +1048,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3794934734291453161, guid: 48e89bd3cf49dd143bf21474bbfedd36,
-        type: 3}
-      propertyPath: m_Size
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3794934733099440161, guid: 48e89bd3cf49dd143bf21474bbfedd36,
         type: 3}
