@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/UInicialGrayBox.unity
+    guid: 42b171c77f1c959408eda8edb04e378f
+  - enabled: 1
+    path: Assets/Scenes/UIMenuInicioGrayBox.unity
+    guid: 7517a82736d6f2d4cac1a1d6b99a9f52
   m_configObjects: {}
