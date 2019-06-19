@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UIMenuInicioGrayBox.unity
     guid: 7517a82736d6f2d4cac1a1d6b99a9f52
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 4b8573ff09262b44b9377eddf2c6c370
+  - enabled: 1
+    path: Assets/Scenes/Escena Prueba.unity
+    guid: 3b2120edfd1d29c4d9aa0a4bea930f52
   m_configObjects: {}

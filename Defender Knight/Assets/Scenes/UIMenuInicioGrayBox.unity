@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47c5aec8eb0ed240a4e12c4dc9f6124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: Main
+  escena: Escena Prueba
   music: {fileID: 4092520756481573675, guid: 81e560b1082779b40b5a17efce33d9cb, type: 3}
 --- !u!4 &1825050290
 Transform:
