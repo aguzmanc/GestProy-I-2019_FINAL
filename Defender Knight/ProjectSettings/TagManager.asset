@@ -8,6 +8,7 @@ TagManager:
   - Cristal
   - FireEnemy
   - Objetivo
+  - EnemyAttack
   layers:
   - Default
   - TransparentFX
@@ -22,8 +23,6 @@ TagManager:
   - attack
   - Esqueleto
   - Crystal
-  - 
-  - 
   - 
   - 
   - 

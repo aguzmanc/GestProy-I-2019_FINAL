@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3646867603470821018}
   - component: {fileID: 8614490842766738281}
   - component: {fileID: 2643553153435817783}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BolaFuego_0
-  m_TagString: Untagged
+  m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
