@@ -40,11 +40,11 @@ public class SystemLife : MonoBehaviour
         }
       
     }
-   
+
     //controlador collision trigger
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag=="Enemy")
+        if (col.tag == "Enemy" || col.tag == "FireEnemy" || col.tag=="EnemyAttack")
         {
             if (ArmorPoints>0)
             {
@@ -66,11 +66,15 @@ public class SystemLife : MonoBehaviour
     //Invulnerable
     IEnumerator GetInvulnerable()
     {
-        Physics2D.IgnoreLayerCollision(8, 9, true);
+        Physics2D.IgnoreLayerCollision(0, 9, true);
+        Physics2D.IgnoreLayerCollision(0, 10, true);
+        Physics2D.IgnoreLayerCollision(0, 11, true);
         c.a = 0.5f;
         rend.material.color = c;
         yield return new WaitForSeconds(1f);
-        Physics2D.IgnoreLayerCollision(8, 9, false);
+        Physics2D.IgnoreLayerCollision(0, 9, false);
+        Physics2D.IgnoreLayerCollision(0, 10, false);
+        Physics2D.IgnoreLayerCollision(0, 11, false);
         c.a = 1f;
         rend.material.color = c;
         

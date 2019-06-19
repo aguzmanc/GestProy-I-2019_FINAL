@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1555195058586849412}
   m_Layer: 10
   m_Name: Rock
-  m_TagString: Untagged
+  m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,3 +132,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  target: {x: 0, y: 0, z: 0}
+  dir: {x: 0, y: 0, z: 0}
