@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Cristal
+  - FireEnemy
   - Objetivo
   layers:
   - Default
@@ -16,6 +18,8 @@ TagManager:
   - 
   - 
   - Player
+  - Enemy
+  - attack
   - Esqueleto
   - Crystal
   - 
